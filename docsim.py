@@ -79,7 +79,7 @@ def process_document(user_input):
 
     # Differentiate between file and user input
     if type(user_input) == str:
-        with open("test_files/{0}".format(user_input), 'r') as f:
+        with open("{0}".format(user_input), 'r') as f:
             read_data = f.read()
     else:
         read_data = ' '.join(user_input)
